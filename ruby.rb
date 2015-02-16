@@ -8,7 +8,7 @@ class Yo
   end
 
   def mappin
-    [1,2,3].map do |i|
+    [1, 2, 3].map do |i|
       i.to_s
     end
   end
@@ -17,5 +17,19 @@ class Yo
     %w[yo bro].collect do |x|
       x.upcase
     end
+  end
+
+  def hash
+    hello = {
+      "yo" => "bro",
+      :hello => "my bro",
+    }
+  end
+
+  def new_hash
+    {
+      hash: "rockets",
+      are: "for noobs",
+    }
   end
 end
